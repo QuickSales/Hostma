@@ -1,0 +1,604 @@
+<section>
+  <div class="banner-5 banner-section section">
+      <img src="./assets/images/patterns/4.png" alt="img" class="patterns-3">
+      <img src="./assets/images/patterns/6.png" alt="img" class="patterns-4">
+      <img src="./assets/images/patterns/9.png" alt="img" class="patterns-8 op-2">
+      <div class="container">
+          <div class="row align-items-stretch">
+              <div class="col-lg-7">
+                  <div class="mb-4">
+                      <img src="./assets/images/png/35.png" class="mb-3" alt="img">
+                      <p class="mb-3 content-1 h5 text-white">Protect your website with daily <span class="tx-info-dark">Automated backups</span></p>
+                      <p class="mb-4 content-2 tx-16">
+                          All websites—large &amp; small—run the risk of crashes and data loss. CodeGuard's cloud backup lets you recover your website data instantly, with just a few clicks.
+                      </p>
+                  </div>
+                  <a (click)="scroll(plans)" value="plans" class="btn btn-lg btn-secondary me-2"><i class="fe fe-eye me-1"></i> View Plans</a>
+                  <a href="https://themeforest.net/user/spruko/portfolio" class="btn btn-lg btn-white me-2"><i class="fe fe-shopping-cart me-1"></i> Buy Now</a>
+              </div>
+              <div class="col-lg-5">
+                  <div class="banner-bg mt-5 mt-lg-0">
+                      <img src="./assets/images/png/51.png" class="reseller-img" alt="img">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <img src="./assets/images/patterns/11.png" alt="img" class="patterns-7 z-index-0">
+  <img src="./assets/images/patterns/15.png" alt="img" class="patterns-8 z-index-0">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">Easy Steps</span></div>
+          <div class="heading-title">Three Simple Steps How <span class="tx-primary">Codeguard works</span></div>
+          <div class="heading-description">Check This Out and follow the steps</div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="card steps-card steps-content-1 shadow-none">
+                  <div class="card-body">
+                      <h5>Connect your website</h5>
+                      <p class="mb-0">Connect your website to CodeGuard using your SFTP/MySQL information. Once connected, an initial backup will start automatically.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card steps-card steps-content-2 shadow-none">
+                  <div class="card-body">
+                      <h5>Get regular backup updates</h5>
+                      <p class="mb-0">CodeGuard automatially monitors your website's files &amp; databases for changes, performs backups and notifies you by email.</p>
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card steps-card steps-content-3 shadow-none">
+                  <div class="card-body">
+                      <h5>Restore from any point</h5>
+                      <p class="mb-0">Restore your website's files &amp; database to any previous backup version by downloading a zip file, performing an automatic restore.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section bg-gray-100 bg-pattern-1" #plans id="plans">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">Choose Plans</span></div>
+          <div class="heading-title">Pricing <span class="tx-primary">Plans</span></div>
+          <div class="heading-description">Choose A Suitable Plan</div>
+      </div>
+      <div class="text-center mb-4">
+          <div class="tab-style-1 border p-1 rounded-pill d-inline-block">
+            <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav nav-pills">
+              <li class="nav-item" [ngbNavItem]="1">
+                <a ngbNavLink>Monthly</a>
+                <ng-template ngbNavContent>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-monthly" role="tabpanel">
+                      <div class="card p-0 shadow-none">
+                          <div class="card-body p-0">
+                              <div class="table-responsive border br-7">
+                                  <table class="table table-bordered pricing-table mb-0 table-hover border-hidden">
+                                      <thead>
+                                          <tr>
+                                              <th scope="col" class="bg-primary">
+                                                  <span class="avatar bg-white-1 text-white rounded-circle tx-18 mb-2"><i class="bi bi-headset"></i></span>
+                                                  <p class="h5 mb-1 text-white">Contact Us!</p>
+                                                  <a routerLink="/pages/contact-us" class="text-white op-8">Proceed <i class="bi bi-arrow-right ms-1"></i></a>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-primary-transparent primary-shadow tx-primary rounded-circle tx-18 mb-2"><i class="bi bi-activity"></i></span>
+                                                  <p class="h5 mb-1">Basic</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$0<span class="tx-13 tx-muted op-7 ms-1">/ month</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-success-transparent success-shadow tx-success rounded-circle tx-18 mb-2"><i class="bi bi-layers"></i></span>
+                                                  <p class="h5 mb-1">Professional</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$9<span class="tx-13 tx-muted op-7 ms-1">/ month</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-info-transparent info-shadow tx-info rounded-circle tx-18 mb-2"><i class="bi bi-airplane"></i></span>
+                                                  <p class="h5 mb-1">Premium</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$15<span class="tx-13 tx-muted op-7 ms-1">/ month</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-danger-transparent danger-shadow tx-danger rounded-circle tx-18 mb-2"><i class="bi bi-gem"></i></span>
+                                                  <p class="h5 mb-1">Enterprise</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$29<span class="tx-13 tx-muted op-7 ms-1">/ month</span></p>
+                                              </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-hdd me-2"></i>Disk Space</td>
+                                              <td>2GB</td>
+                                              <td>5GB</td>
+                                              <td>10GB</td>
+                                              <td>15GB</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-activity me-2"></i>Websites</td>
+                                              <td>Up to 8 Websites</td>
+                                              <td>Up to 17 Websites</td>
+                                              <td>Up to 35 Websites</td>
+                                              <td>Up to 95 Websites</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-box me-2"></i>Databases</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-arrow-up-circle me-2"></i>Automatic Backup Frequency</td>
+                                              <td>5 Days</td>
+                                              <td>Daily</td>
+                                              <td>Daily</td>
+                                              <td>Daily</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-cloud-arrow-up me-2"></i>On Demand Backups</td>
+                                              <td>-</td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-filter me-2"></i>Priority Queueing</td>
+                                              <td>-</td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-file-earmark-zip me-2"></i>Zip file downloads</td>
+                                              <td>5 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-arrow-clockwise me-2"></i>Full website restore</td>
+                                              <td>7 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-files me-2"></i>Individual file restore</td>
+                                              <td>7 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"></td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                </ng-template>
+              </li>
+              <li class="me-2 mb-1" [ngbNavItem]="2">
+                <a ngbNavLink>Yearly</a>
+                <ng-template ngbNavContent>
+                  <div class="tab-pane">
+                    <div class="tab-pane fade" id="pills-yearly" role="tabpanel">
+                      <div class="card p-0 shadow-none">
+                          <div class="card-body p-0">
+                              <div class="table-responsive border br-7">
+                                  <table class="table table-bordered pricing-table mb-0 table-hover border-hidden">
+                                      <thead>
+                                          <tr>
+                                              <th scope="col" class="bg-primary">
+                                                  <span class="avatar bg-white-1 text-white rounded-circle tx-18 mb-2"><i class="bi bi-headset"></i></span>
+                                                  <p class="h5 mb-1 text-white">Contact Us!</p>
+                                                  <a routerLink="/pages/contact-us" class="text-white op-8">Proceed <i class="bi bi-arrow-right ms-1"></i></a>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-primary-transparent primary-shadow tx-primary rounded-circle tx-18 mb-2"><i class="bi bi-activity"></i></span>
+                                                  <p class="h5 mb-1">Basic</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$29<span class="tx-13 tx-muted op-7 ms-1">/ year</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-success-transparent success-shadow tx-success rounded-circle tx-18 mb-2"><i class="bi bi-layers"></i></span>
+                                                  <p class="h5 mb-1">Professional</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$35<span class="tx-13 tx-muted op-7 ms-1">/ year</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-info-transparent info-shadow tx-info rounded-circle tx-18 mb-2"><i class="bi bi-airplane"></i></span>
+                                                  <p class="h5 mb-1">Premium</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$45<span class="tx-13 tx-muted op-7 ms-1">/ year</span></p>
+                                              </th>
+                                              <th scope="col">
+                                                  <span class="avatar bg-danger-transparent danger-shadow tx-danger rounded-circle tx-18 mb-2"><i class="bi bi-gem"></i></span>
+                                                  <p class="h5 mb-1">Enterprise</p>
+                                                  <p class="h5 tx-28 fw-semibold tx-color-default mb-0">$59<span class="tx-13 tx-muted op-7 ms-1">/ year</span></p>
+                                              </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-hdd me-2"></i>Disk Space</td>
+                                              <td>2GB</td>
+                                              <td>5GB</td>
+                                              <td>10GB</td>
+                                              <td>15GB</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-activity me-2"></i>Websites</td>
+                                              <td>Up to 8 Websites</td>
+                                              <td>Up to 17 Websites</td>
+                                              <td>Up to 35 Websites</td>
+                                              <td>Up to 95 Websites</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-box me-2"></i>Databases</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-arrow-up-circle me-2"></i>Automatic Backup Frequency</td>
+                                              <td>5 Days</td>
+                                              <td>Daily</td>
+                                              <td>Daily</td>
+                                              <td>Daily</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-cloud-arrow-up me-2"></i>On Demand Backups</td>
+                                              <td>-</td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-filter me-2"></i>Priority Queueing</td>
+                                              <td>-</td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                              <td><i class="bi bi-check-circle tx-success"></i></td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-file-earmark-zip me-2"></i>Zip file downloads</td>
+                                              <td>5 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-arrow-clockwise me-2"></i>Full website restore</td>
+                                              <td>7 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"><i class="bi bi-files me-2"></i>Individual file restore</td>
+                                              <td>7 <span class="tx-11 op-7">/ month</span></td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                              <td>Unlimited</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="pricing-feature bg-primary text-white border-top border-white-1"></td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                              <td class="p-4">
+                                                  <div class="d-grid">
+                                                      <a href="javascript:void(0);" class="btn btn-outline-primary">Get Started</a>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </ng-template>
+              </li>
+
+            </ul>
+
+      <div class="panel-body tabs-menu-body">
+        <div [ngbNavOutlet]="nav"></div>
+      </div>
+
+
+          </div>
+      </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <img src="./assets/images/patterns/27.png" alt="img" class="patterns-2 op-1 z-index-0">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">Features</span></div>
+          <div class="heading-title">Backup your <span class="tx-primary">Website</span></div>
+          <div class="heading-description">Main Features</div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="card border-top border-3 border-secondary">
+                  <div class="card-body text-center">
+                      <div class="p-2 bg-secondary-transparent rounded-circle feature-avatar-icon-1 d-inline-block mb-3 secondary">
+                          <span class="avatar feature-avatar all-ease-03 avatar-lg rounded-circle bg-secondary-gradient tx-24">
+                              <i class="bi bi-star-half outline"></i>
+                              <i class="bi bi-star-fill filled"></i>
+                          </span>
+                      </div>
+                      <div>
+                          <h4 class="mb-3">Automatic backups</h4>
+                          <p class="mb-0 tx-muted">Stet magna gubergren justo no et sit, duo eirmod et elitr diam. Et gubergren tempor consetetur aliquyam accusam consetetur magna.</p>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card border-top border-3 border-info">
+                  <div class="card-body text-center">
+                      <div class="p-2 bg-info-transparent rounded-circle feature-avatar-icon-1 info d-inline-block mb-3">
+                          <span class="avatar feature-avatar all-ease-03 avatar-lg rounded-circle bg-info-gradient tx-24">
+                              <i class="bi bi-gear-wide-connected outline"></i>
+                              <i class="bi bi-gear-wide filled"></i>
+                          </span>
+                      </div>
+                      <h4 class="mb-3">Hassle-free setup</h4>
+                      <p class="mb-0 tx-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card border-top border-3 border-success">
+                  <div class="card-body text-center">
+                      <div class="p-2 bg-success-transparent rounded-circle feature-avatar-icon-1 d-inline-block mb-3 success">
+                          <span class="avatar feature-avatar all-ease-03 avatar-lg rounded-circle bg-success-gradient tx-24">
+                              <i class="bi bi-shield-check outline"></i>
+                              <i class="bi bi-shield-fill-check filled"></i>
+                          </span>
+                      </div>
+                      <h4 class="mb-3">30-day Money-back guarantee</h4>
+                      <p class="mb-0 tx-muted">At vero eos et accusamus et iusto odio dignissi mos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section bg-pattern-1 bg-gray-100">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">Includes</span></div>
+          <div class="heading-title">What CodeGuard <span class="tx-primary">Includes ?</span></div>
+          <div class="heading-description">See How This Tool Helps</div>
+      </div>
+      <div class="row">
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/8.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Daily Automatic Website Backups</h5>
+                      <p class="mb-0">Secure your website with automated daily backups stored offsite with built-in website secured tools.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/9.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Unlimited Files &amp; Databases</h5>
+                      <p class="mb-0">Backup an unlimited number of files and databases - you are restricted only by the storage space you use.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/11.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">One-Click Restores</h5>
+                      <p class="mb-0">A simple restore process makes it easy to rollback a single file or your entire website to a previous version.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/12.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Malware Monitoring</h5>
+                      <p class="mb-0">Rest easy knowing CodeGuard is diligently checking your site for changes every day. Stet magna gubergren justo no et sit.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/8.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Automatic WordPress Updates</h5>
+                      <p class="mb-0">Automatically update WordPress and its plugins to keep it secure with auto recovery in case of problems.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/15.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">File Change Monitoring</h5>
+                      <p class="mb-0">Get notified by email anytime something changes within the source code of your site. Stet magna gubergren justo no et sit.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/13.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Staging of Restores</h5>
+                      <p class="mb-0">Quickly test any backed up site with simple and automated staging prior to restore. Stet magna gubergren justo no et sit.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/10.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Email Backup</h5>
+                      <p class="mb-0">Get protection for your emails too as they are backed up as part of your websites files. Stet magna gubergren justo no et sit.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+              <div class="card feature-card-9 shadow-none border">
+                  <div class="card-body">
+                      <div class="mb-3">
+                          <img src="./assets/images/icons/14.png" class="reseller-img" alt="img" >
+                      </div>
+                      <h5 class="mb-3 subtitle">Full Automation</h5>
+                      <p class="mb-0">Completely hands free setup and ongoing backups with automated notifications if things go wrong.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section blob-bg-sec banner-pd-3">
+  <img src="./assets/images/patterns/18.png" alt="img" class="patterns-5 transform-rotate-180 height-inherit bottom-0 op-1">
+  <img src="./assets/images/patterns/18.png" alt="img" class="patterns-7 height-inherit bottom-0">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-7">
+              <div class="heading-section text-start mb-4">
+                  <div class="heading-title text-white">Best Technical Support 24/7</div>
+                  <div class="heading-description text-white op-8">Support and Guidance</div>
+              </div>
+              <p class="mb-3 op-8">Est amet sit vero sanctus labore no sed ipsum ipsum nonumy. Sit ipsum sanctus ea magna est. Aliquyam sed amet. Kasd diam rebum sit ipsum ipsum erat et kasd, sed et et erat elitr consetetur et aliquyam. Et lorem ipsum Sit ipsum sanctus ea.</p>
+              <p class="tx-20 fw-500">Call Us : <a href="tel:123-789-7854" class="text-white me-1">123-789-7854</a> (Or) <a routerLink="/pages/contact-us" class="text-white ms-1">Chat Now</a></p>
+              <a routerLink="/pages/contact-us" class="btn btn-lg btn-secondary">Contact Now</a>
+          </div>
+          <div class="col-lg-5">
+              <div class="text-center mt-5 mt-lg-0">
+                  <img src="./assets/images/png/57.png" alt="img" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">FAQ'S</span></div>
+          <div class="heading-title">We Are Here To <span class="tx-primary">Help You</span> </div>
+          <div class="heading-description">Browse Through The Most Frequently Asked Questions</div>
+      </div>
+      <div class="accordion accordion-style-1" id="acc-style-1">
+        <ngb-accordion #acc="ngbAccordion">
+          <ngb-panel class="active" title="   What is CodeGuard?" cardClass="acc-card mb-2 br-5 ">
+            <ng-template ngbPanelContent>
+              CodeGuard is a fully automated website backup service that gives you complete protection against data loss and malware.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title=" Why do I need CodeGuard?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              CodeGuard provides an independent offsite backup solution for your website along with daily monitoring to ensure your website is online and malware free.            </ng-template>
+          </ngb-panel>
+          <ngb-panel title=" What if I run out of storage?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              Switching plans is easy! You can upgrade and increase your disk storage allowance in just a few simple clicks via our client area.
+           </ng-template>
+            </ngb-panel>
+          <ngb-panel title=" Where are backups stored?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              Backups are stored on Amazon Web Services Simple Storage System which provides market leading resiliance and redundancy for your backups.            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Are the backups encrypted?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              Yes, backups are stored encrypted using the AES-256 Encryption Standard.            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Do you backup databases?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              Yes, databases can be backed up also. Database backups are supported for MySQL and MSSQL databases.            </ng-template>
+          </ngb-panel>
+          <ngb-panel title=" What is File Change Alert Monitoring?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              CodeGuard can monitor and notify you by email when your website changes to alert you to new threats and malware.            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="What happens if my site gets infected?" cardClass="acc-card mb-2 br-5 border-top">
+            <ng-template ngbPanelContent>
+              With CodeGuard's daily snapshots, if your website gets attacked, you can restore to a previous uninfected version at any time.
+            </ng-template>
+          </ngb-panel>
+
+
+
+
+        </ngb-accordion>
+
+      </div>
+  </div>
+</section>

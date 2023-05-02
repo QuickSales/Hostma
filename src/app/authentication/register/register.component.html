@@ -1,0 +1,64 @@
+
+<section class="section banner-pd-1 mt-9">
+  <div class="container">
+      <div class="text-center mb-5">
+          <div class="heading-subtitle"><span class="tx-primary tx-16 fw-semibold">Register</span></div>
+          <h2>User <span class="tx-primary">Registration</span></h2>
+      </div>
+      <div class="row justify-content-center align-items-center">
+          <div class="col-xl-4 col-lg-6 mt-3">
+
+              <div class="card border mb-0">
+                  <div class="card-body p-sm-6">
+
+                    <form (ngSubmit)="register()" class="login100-form validate-form">
+                      <span class="login100-form-title">
+                              Registration
+                          </span>
+                      <div class="wrap-input100 validate-input input-group mb-2" data-bs-validate="Valid email is required: ex@abc.xyz">
+                          <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                              <i class="bi  bi-envelope" aria-hidden="true"></i>
+                          </a>
+                          <input class="input100 border-start-0 ms-0 form-control" type="email" name="email" [(ngModel)]="email" placeholder="Enter email Id" required>
+                      </div>
+                      <div class="wrap-input100 validate-input input-group" id="Password-toggle">
+                          <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                              <i class="fe fe-eye" aria-hidden="true"></i>
+                          </a>
+                          <input class="input100 border-start-0 ms-0 form-control" name="password" type="password" [(ngModel)]="password" placeholder="Enter Password" required>
+                      </div>
+                      <div class="form-group">
+                          <p *ngIf="errorMessage.length > 0" class="text-danger">
+                              {{errorMessage}}</p>
+
+                          <p *ngIf="error.message.length > 0" class="text-danger">
+                              {{error.message}} </p>
+
+                              <p *ngIf="message.length > 0" class="text-info">
+                                  {{message}} </p>
+                      </div>
+                      <label class="custom-control custom-checkbox mt-4 mb-2">
+                              <input type="checkbox" class="custom-control-input me-2">
+                              <span class="custom-control-label">Agree the <a routerLink="/pages/extension/faqs">terms and policy</a></span>
+                          </label>
+                      <div class="container-login100-form-btn">
+                          <button type="submit" class="login100-form-btn btn-primary">
+                                  Register
+                              </button>
+                      </div>
+                      <div class="text-center pt-3">
+                          <p class="text-dark mb-0">Already have account?<a routerLink="/auth/login" class="text-primary ms-1">Sign In</a></p>
+                      </div>
+                      <div class=" flex-c-m text-center mt-3">
+                        <p>Or</p>
+                        <div class="d-grid mb-3">
+                          <button type="submit" class="btn btn-white border"><img src="./assets/images/png/45.png" class="me-2" alt="img" width="20">Continue with Google</button>
+                      </div>
+                      </div>
+                  </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
