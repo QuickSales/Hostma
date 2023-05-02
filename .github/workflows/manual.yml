@@ -1,25 +1,48 @@
-name: CI
-
+name: Angular GitHub CI
 on:
   push:
     branches:
-    - master
-    - release/*
+      - main
 
 jobs:
-  firebase-deploy:
-
+  ci:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
     steps:
-     - uses: actions/checkout@master
-     - uses: actions/setup-node@master
-       with:
-        node-version: '18.x'
-     - run: npm install
-     - run: npm run build --prod
-     - uses: w9jds/firebase-action@master
-       with:
-         args: deploy --only hosting
-       env:
-         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          # caching node_modules
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: Install Dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: |
+          npm ci
+      - name: Build
+        run: |
+          npm run build -- --prod
+      - name: Lint
+        run: |
+          npm run lint
+      - name: Test
+        run: |
+          npm run test -- --prod
